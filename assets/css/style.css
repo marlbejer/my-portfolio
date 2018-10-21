@@ -10,14 +10,14 @@ h3 {
 }
 .home img {
     width: 100%;
-    height: 80vh;
-    opacity: 0.7;
+    height: 100vh;
+    opacity: 0.5;
 }
 .home > h1 {
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:black;
@@ -26,24 +26,10 @@ h3 {
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 47%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:black;
-}
-
-.color-wrapper > div  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: grey;
-    float: left;
-    font-weight: bold;
-    color: wheat;
 }
 .color-wrapper {
     display: flex;
@@ -51,10 +37,86 @@ h3 {
     justify-content: center;
     width: 70%;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.home-c {
-    background-color: #E82F17;
+.color-wrapper > div  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    float: left;
+    color: wheat;
+    padding-top: 1%;
+}
+.color-wrapper label {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.color-wrapper .home-c {
+    color: #E82F17;
+}
+.color-wrapper .home-o {
+    color: #E56322;
+}
+.color-wrapper .home-l {
+    color: #FFC12E;
+}
+.color-wrapper .home-r {
+    color: #00A6ED;
+}
+.color-wrapper .home-f {
+    color: #0D0630;
+}
+.color-wrapper .home-u {
+    color: #77FF00;
+}
+.my-photo {
+    z-index: -3;
+}
+.my-photo img {
+    /* position: absolute; */
+    margin-top: -100px;
+    border-radius: 70%;
+    width: 60%;
+    height: 60%;
+    /* z-index: 3; */
+}
+
+
+@media only screen and (min-width:601px) and (max-width: 960px) {
+    .home img {
+        height: 100vh;
+    }
+    .home > h1 {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:black;
+    }
+    .home > h3 {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:black;
+    }
+    .color-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
