@@ -16,11 +16,11 @@
 
 </head>
 
-<body>
+<body id="home">
 
     <div class="main-wrapper">
         <nav class="navigation navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">MBW</a>
+            <a class="navbar-brand" href="#home">MBW</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,22 +28,22 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#experiences">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Me</a>
+                        <a class="nav-link" href="#contacts">Contact Me</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -90,7 +90,7 @@
         <div class="about-slogan">
             <label>Let's work together and create something awesome.</label>
         </div>
-        <div class="about">
+        <div id="about" class="about">
             <h5>Something about myself...</h5>
             <div class="about-profile">
                 <img src="assets/images/smile.png" alt="marlon bejer photo">
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="skills">
+        <div id="skills" class="skills">
             <h5>My development skills set</h5>
             <table class="table table-stripped">
                 <tr>
@@ -242,7 +242,7 @@
                 </tr>
             </table>
         </div>
-        <div class="experience">
+        <div id="experience" class="experience">
             <h5>My work experiences...</h5>
             <div class="card">
                 <img class="card-img-top" src="assets/images/smile.png" alt="Card image cap">
@@ -292,13 +292,13 @@
                 </div>
             </div>
         </div>
-        <div class="projects">
+        <div id="projects" class="projects">
             <h5>Some of my works!</h5>
             <a href="#"> <div class="project">
                     Capstone 1 - A Static Website
                 </div></a>
         </div>
-        <div class="contacts">
+        <div id="contacts" class="contacts">
             <h5>How to reach me?</h5>
             <div class="contact-info">
                 <p><strong><i class="fas fa-home"></i></strong>&nbsp;&nbsp; North Signal Village, Taguig City 1635</p>
@@ -319,7 +319,7 @@
         </div>
     </div>
     <div class="top">
-        <i class="fas fa-arrow-circle-up"></i>
+        <a href="#"><i class="fas fa-arrow-circle-up"></i></a> 
     </div>
 
 
@@ -327,6 +327,23 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.querySelector(".top").style.display = "block";
+            } else {
+                document.querySelector(".top").style.display = "none";
+            }
+        }
+        $(document).ready(function(){
+            $('.nav-item a').click(function(){
+                $('#navbarsExampleDefault').removeClass('show');
+                
+            });
+
+        });
+    </script>
 </body>
 
 </html>
