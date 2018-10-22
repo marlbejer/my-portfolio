@@ -22,6 +22,7 @@ h6 {
         "home"
         "about-slogan"
         "about"
+        "skills"
     ;
 }
 /* naming of all grid areas */
@@ -46,6 +47,12 @@ h6 {
     grid-area: about;
     width: 100%;
 }
+.skills {
+    grid-area: skills;
+    padding: 10px;
+    width: 100%;
+}
+ /* ******************************** */
 
 nav .navbar {
     width: 100%;
@@ -197,7 +204,9 @@ nav .navbar {
 /*************************************/
 /****** start of the about part ******/
 /*************************************/
-
+.about h5 {
+    text-align: center;
+}
 .about-profile {
     display: flex;
     align-items: center;
@@ -232,6 +241,62 @@ nav .navbar {
 .educ-details p {
     font-size: 0.8rem;
 }
+
+
+/*************************************/
+/****** start of the skills part ******/
+/*************************************/
+.skills h5 {
+    text-align: center;
+}
+/* html */
+.skills table tr:first-child .progress > div {
+    width: 60%;
+}
+/* css */
+.skills table tr:nth-child(2) .progress > div {
+    width: 60%;
+}
+/* jquery */
+.skills table tr:nth-child(3) .progress div {
+    width: 70%;
+}
+/* angular */
+.skills table tr:nth-child(4) .progress div {
+    width: 50%;
+}
+/* php */
+.skills table tr:nth-child(5) .progress div {
+    width: 50%;
+}
+/* phyton */
+.skills table tr:nth-child(6) .progress div {
+    width: 40%;
+}
+/* c# */
+.skills table tr:nth-child(7) .progress div {
+    width: 80%;
+}
+/* mysql */
+.skills table tr:nth-child(8) .progress div {
+    width: 30%;
+}
+/* mssql */
+.skills table tr:nth-child(9) .progress div {
+    width: 60%;
+}
+/* .net framework */
+.skills table tr:nth-child(10) .progress div {
+    width: 75%;
+}
+/* .net core */
+.skills table tr:last-child .progress div {
+    width: 50%;
+}
+
+
+
+
 @media only screen and (min-width:601px) and (max-width: 960px) {
     .home img {
         height: 100vh;
