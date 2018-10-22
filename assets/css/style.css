@@ -23,6 +23,10 @@ h6 {
         "about-slogan"
         "about"
         "skills"
+        "experience"
+        "projects"
+        "contacts"
+        "footer"
     ;
 }
 /* naming of all grid areas */
@@ -49,6 +53,26 @@ h6 {
 }
 .skills {
     grid-area: skills;
+    padding: 10px;
+    width: 100%;
+}
+.experience {
+    grid-area: experience;
+    padding: 10px;
+    width: 100%;
+}
+.projects {
+    grid-area: projects;
+    padding: 10px;
+    width: 100%;
+}
+.contacts {
+    grid-area: contacts;
+    padding: 10px;
+    width: 100%;
+}
+.footer {
+    grid-area: footer;
     padding: 10px;
     width: 100%;
 }
@@ -294,8 +318,62 @@ nav .navbar {
     width: 50%;
 }
 
+/* *************************** */
+/* start of experience section */
+/* *************************** */
+.experience {
+    text-align: center;
+}
+.experience > div {
+    width: 100%;
+}
+.experience > div > .card-img-top {
+    margin: 0 auto;    
+    width: 60%;
+}
 
 
+/* *************************** */
+/* *start of projects section* */
+/* *************************** */
+
+.projects {
+    text-align: center;
+}
+
+/* *************************** */
+/* *start of contacts section */
+/* *************************** */
+.contacts > h5 {
+    text-align: center;
+}
+
+/* *************************** */
+/* *start of footer section */
+/* *************************** */
+
+.footer {
+    background-color: #555;
+}
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0%;
+}
+.footer li {
+    list-style: none;
+    display: block;
+    float: left;
+}
+.footer a {
+    padding: 10px 20px;
+    font-size: 3rem;
+}
+.footer a:hover {
+    background-color: whitesmoke;
+}
 
 @media only screen and (min-width:601px) and (max-width: 960px) {
     .home img {
