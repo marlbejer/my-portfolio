@@ -1,0 +1,49 @@
+:root {
+	--blue-color: #75d6ec;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid, [class*="col"] {
+	padding: 0;
+}
+.row {
+	margin: 0;
+}
+
+/**********************************/
+/*this is for home section*/
+#home {
+	width: 100%;
+	height: calc(100vh - 80px);
+	padding-top: calc(45vh - 80px);
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************THIS IS THE FOOTER*************/
