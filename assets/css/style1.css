@@ -1,5 +1,8 @@
 :root {
-	--blue-color: #75d6ec;
+	--cobalt-blue: #0047AB;
+	--dodger-blue: 	#005A9C; /*dodger blue*/
+	--bleu-de-france-blue: #318CE7; /*bleu de france*/
+	--baby-blue: #89CFF0; /*baby blue*/
 }
 
 * {
@@ -9,41 +12,214 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	width: 100%;
+}
+
 .container-fluid, [class*="col"] {
 	padding: 0;
 }
+
 .row {
 	margin: 0;
+	padding: 0;
 }
 
+.active {
+	color: white;
+	font-weight: bolder;
+}
+.card {
+	border-radius: 0;
+}
+/*************************/
+/*this is for navigation*/
+
+.navigation {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+.navbar-collapse {
+	transition: all 0.5s ease;
+}
 /**********************************/
 /*this is for home section*/
 #home {
 	width: 100%;
-	height: calc(100vh - 80px);
-	padding-top: calc(45vh - 80px);
+	height: calc(100vh - 55px);
+	padding-top: calc(40vh - 80px);
+	padding-left: 20px;
+	padding-right: 20px;
 	text-align: center;
+	background-color: var(--dodger-blue);
+}
+#home * {
+	margin-bottom: 20px;
+}
+#home .profile-name {
+	color: white;
+	font-weight: bolder;
+}
+
+#home a {
+	background-color: green;	
+	text-decoration: none;
+	color: #f2f2f2;
+	padding: 10px;
+}
+
+#whatIDo {
+	padding-top: 20px;
+}
+
+#whatIDo .card {
+	height: 600px;
+	box-shadow: 0 0 5px -1px #555;
+}
+
+#whatIDo > div > div {
+	padding: 20px;
+}
+
+#myTargetClients {
+	padding-top: 20px;
+}
+
+#myTargetClients > div > div {
+	padding: 15px;
+}
+#myTargetClients .card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 320px;
+	padding-top: 20px;
+	border: 0;
+}
+#myTargetClients .card img {
+	width: 50%;
+	height: 50%;
+}
+
+/*********************************/
+/*this is for the about section*/
+#about {
+	padding: 20px;
+}
+#about img {	
+	display: block;
+	transform: translateX(80%);
+	width: 40%;
+	height: 40%;
+
+}
+#about > div > div {
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+#about > div > div:first-child > * {
+	margin-bottom: 30px;
+}
+#about .html {
+	width: 70%;
+}
+
+#about .css {
+	width: 60%;
+}
+#about .jq {
+	width: 75%;
+}
+#about .ng {
+	width: 50%;
+}
+#about .cs {
+	width: 85%;
+}
+#about .framework {
+	width: 65%;
+}
+#about .core {
+	width: 55%;
+}
+#about .php {
+	width: 50%;
+}
+#about .phyton {
+	width: 45%;
+}
+#about .mssql {
+	width: 70%;
+}
+#about .mysql {
+	width: 30%;
+}
+/****************************************/
+/*this is for the experience section*/
+#experience {
+	padding: 20px;
+}
+
+#experience .card {
+	border: 0;
+	width: 100%;
+}
+#experience .card img {
+	width: 50%;
+	height: 50%;
+	transform: translateX(50%);
+}
+
+/***************************************/
+/*this is for project section*/
+#projects {
+	padding: 20px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*************THIS IS THE FOOTER*************/
+.footer {
+	background-color: var(--baby-blue);
+	padding-top: 10px;
+}
+.footer > div {
+	padding: 10px;
+}
+.footer > div:last-child {
+	padding: 0;
+}
+.footer ul {
+	background-color: var(--dodger-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0%;
+}
+.footer li {
+    list-style: none;
+    display: block;
+    float: left;
+}
+.footer a i {
+    padding: 10px 20px;
+    font-size: 3rem;
+    color: white;
+
+}
+.footer a i:hover {
+	color: var(--dodger-blue);
+    background-color: var(--bleu-de-france-blue);
+}
+
+.footer-info {
+	padding: 0 15px;
+}
