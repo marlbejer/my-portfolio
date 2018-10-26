@@ -15,7 +15,15 @@
 html {
 	scroll-behavior: smooth;
 }
-
+h1, h2, h3 {
+	/* font-weight: bolder; */
+	font-family: 'Kaushan Script', cursive;
+	color: black;
+	text-shadow: 1px 1px 5px #222;
+}
+h4, h5, h6 {
+	font-weight: bold;
+}
 img {
 	width: 100%;
 }
@@ -44,9 +52,12 @@ img {
 	top: 0;
 	z-index: 5;
 }
-.navbar-collapse {
+/* .navbar-collapse li {
 	transition: all 0.5s ease;
 }
+.navbar-collapse li:hover {
+	height: 0;
+} */
 /**********************************/
 /*this is for home section*/
 #home {
@@ -58,7 +69,7 @@ img {
 	text-align: center;
 	background-color: var(--dodger-blue);
 }
-#home * {
+#home .row div > * {
 	margin-bottom: 20px;
 }
 #home .profile-name {
@@ -72,7 +83,9 @@ img {
 	color: #f2f2f2;
 	padding: 10px;
 }
-
+#home h3 {
+	margin-bottom: 30px;
+}
 #whatIDo {
 	padding-top: 20px;
 }
@@ -182,7 +195,10 @@ img {
 #projects {
 	padding: 20px;
 }
-
+#projects ul {
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
 
 
 /*************THIS IS THE FOOTER*************/
@@ -222,4 +238,36 @@ img {
 
 .footer-info {
 	padding: 0 15px;
+}
+
+@media only screen and (max-width:600px) and (orientation:landscape)
+{
+	#home {
+		width: 100%;
+		height: calc(100vh - 55px);
+		padding-top: calc(40vh - 80px);
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		background-color: var(--dodger-blue);
+	}
+	#home * {
+		margin-bottom: 20px;
+	}
+	#home .profile-name {
+		color: white;
+		font-weight: bolder;
+	}
+	
+	#home a {
+		background-color: green;	
+		text-decoration: none;
+		color: #f2f2f2;
+		padding: 10px;
+		width: 40%;
+	}
+
+	#home h3 {
+		margin-bottom: 20px;
+	}
 }
