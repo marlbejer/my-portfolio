@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	loadPage('experience');
+	loadPage('home');
 
 	$('.navbar-brand').click(function(){
 		loadPage('home');
