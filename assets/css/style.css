@@ -69,7 +69,10 @@ img {
 	height: calc(100vh - 55px);
 	padding-top: calc(40vh - 100px);
 	text-align: center;
-	background-color: var(--dodger-blue);
+	/*background-color: var(--dodger-blue);*/
+	background: url('../images/background.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 #home * {
 	margin-bottom: 30px;
@@ -203,6 +206,9 @@ img {
 #projects ul {
 	margin-right: 20px;
 	margin-bottom: 30px;
+}
+#projects .list-group-item {
+	border: 0;
 }
 /*****************************************/
 /*this is for the contact page*/
