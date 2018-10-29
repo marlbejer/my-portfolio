@@ -194,9 +194,7 @@ img {
 	height: 50%;
 	transform: translateX(50%);
 }
-#experience > div > div:nth-child(2) .card img {
-	height: 150px;
-}
+
 /***************************************/
 /*this is for project section*/
 #projects {
