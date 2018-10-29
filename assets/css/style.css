@@ -52,6 +52,10 @@ img {
 	top: 0;
 	z-index: 5;
 }
+
+#main-container > div {
+	/*height: calc(100vh + 354px);*/
+}
 /* .navbar-collapse li {
 	transition: all 0.5s ease;
 }
@@ -63,18 +67,16 @@ img {
 #home {
 	width: 100%;
 	height: calc(100vh - 55px);
-	padding-top: calc(40vh - 80px);
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-top: calc(40vh - 100px);
 	text-align: center;
 	background-color: var(--dodger-blue);
 }
-#home .row div > * {
-	margin-bottom: 20px;
+#home * {
+	margin-bottom: 30px;
 }
 #home .profile-name {
 	color: white;
-	font-weight: bolder;
+	font-size: 4.5rem;
 }
 
 #home a {
@@ -91,12 +93,12 @@ img {
 }
 
 #whatIDo .card {
-	height: 600px;
+	height: 650px;
 	box-shadow: 0 0 5px -1px #555;
 }
 
 #whatIDo > div > div {
-	padding: 20px;
+	padding: 10px;
 }
 
 #myTargetClients {
@@ -189,18 +191,34 @@ img {
 	height: 50%;
 	transform: translateX(50%);
 }
-
+#experience > div > div:nth-child(2) .card img {
+	height: 150px;
+}
 /***************************************/
 /*this is for project section*/
 #projects {
+	margin-bottom: calc(100vh - 650px);
 	padding: 20px;
 }
 #projects ul {
 	margin-right: 20px;
 	margin-bottom: 30px;
 }
-
-
+/*****************************************/
+/*this is for the contact page*/
+#contactme {
+	padding: 20px;
+}
+#contactme form {
+	margin-top: 20px;
+}
+#contactme textarea {
+	resize: none;
+}
+#contactme .form-control,
+#contactme .btn {
+	border-radius: 0;
+}
 /*************THIS IS THE FOOTER*************/
 .footer {
 	background-color: var(--baby-blue);
@@ -271,3 +289,4 @@ img {
 		margin-bottom: 20px;
 	}
 }
+
