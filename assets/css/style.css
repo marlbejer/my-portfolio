@@ -294,6 +294,6 @@ img {
 	}
 }
 
-@media only screen and (min-width:1024px) {
-	max-width: 1024px;
+@media only screen and (min-width:961px) {
+	max-width: 961px;
 }
