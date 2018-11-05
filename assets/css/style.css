@@ -295,5 +295,8 @@ img {
 }
 
 @media only screen and (min-width:961px) {
-	max-width: 961px;
+	body {
+		max-width: 961px;
+	}
+	
 }
